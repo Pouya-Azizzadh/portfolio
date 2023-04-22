@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .padingX {
+    @apply md:px-24 px-6;
+  }
+  .paddingY {
+    @apply md:py-16 py-6;
+  }
+  .flexCenter{
+    @apply flex justify-center items-center
+  }
+  .reversSection {
+    @apply flex md:flex-row flex-col-reverse
+  }
+}
+.nav-mobile {
+
+  animation: navAnimated 0.5s ;
+}
+@keyframes navAnimated {
+  0% {
+    transform: translateY(300px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
